@@ -14,6 +14,9 @@ function Login({ setIsAuth }) {
                 setIsAuth(true)
                 navigate("/")
             })
+            .catch((error) => {
+                console.log("Caught error Popup closed", error);
+            });
     }
 
     return (
