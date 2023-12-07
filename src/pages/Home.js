@@ -3,7 +3,6 @@ import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { db, auth } from "../firebaseConfig";
 import { MdDelete } from "react-icons/md";
 import { BsPersonLinesFill } from "react-icons/bs";
-import { MdSubtitles } from "react-icons/md";
 
 function Home({ isAuth }) {
     const [postLists, setPostLists] = useState([]);
