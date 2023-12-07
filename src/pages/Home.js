@@ -34,7 +34,7 @@ function Home({ isAuth }) {
                             </div>
                             {/* DELETE ICON */}
                             <div style={{ cursor: "pointer" }} className="deletePost">
-                                {isAuth && post.author.id === auth.currentUser.uuid && < MdDelete style={{ height: "3rem", width: "2rem" }} onClick={() => deletePost(post.id)} />}
+                                {isAuth && post.author.id === auth.currentUser.uid && < MdDelete style={{ height: "3rem", width: "2rem" }} onClick={() => deletePost(post.id)} />}
                             </div>
                         </div>
                         <div className="postTextContainer">{post.postText}</div>
